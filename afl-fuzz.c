@@ -9279,10 +9279,12 @@ int main(int argc, char** argv) {
         break;
 
       case 'N': /* Network configuration */
+        /*
         if (use_net) FATAL("Multiple -N options not supported");
         if (parse_net_config(optarg, &net_protocol, &net_ip, &net_port)) FATAL("Bad syntax used for -N. Check the network setting. [tcp/udp]://127.0.0.1/port");
 
         use_net = 1;
+        */
         break;
 
       case 'D': /* waiting time for the server initialization */
@@ -9379,9 +9381,10 @@ int main(int argc, char** argv) {
         break;
 
       case 'c': /* cleanup script */
-
+        /*
         if (cleanup_script) FATAL("Multiple -c options not supported");
         cleanup_script = optarg;
+        */
         break;
 
       case 'l': /* local port to connect from */
